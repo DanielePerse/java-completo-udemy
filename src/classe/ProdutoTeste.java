@@ -14,5 +14,15 @@ public class ProdutoTeste {
 			p2.nome = "caneta preta";
 			p2.preco = 12.56;
 			p2.desconto = 0.29;
+			
+			
+			System.out.println(p1.nome);
+			System.out.println(p2.nome);
+			
+			double precoFinal1 = p1.preco * (1 - p1.desconto);
+			double precoFinal2 = p2.preco * (1 - p2.desconto);
+			double mediaCarrinho = (precoFinal1 + precoFinal2) / 2;
+
+			System.out.printf("Média do carrinho = R$%.2f.", mediaCarrinho);
 		}
 }
