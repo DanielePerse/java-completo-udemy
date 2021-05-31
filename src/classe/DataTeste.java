@@ -20,7 +20,8 @@ public class DataTeste {
 		d2.mes = 9;
 		d2.ano = 1982;
 		
-		System.out.printf("%d/%d/%d", d2.dia, d2.mes, d2.ano);
+		// refatorado utilizando o método criado em data para formatr direto
+		System.out.printf(d2.obterDataFormatada());
 	}
 
 }
