@@ -12,10 +12,13 @@ public class ProdutoTeste {
 			
 			var p2 = new Produto();
 			p2.nome = "Caneta Preta";
-			p2.preco = 12.56;			
+			p2.preco = 12.56;		
 			
-			System.out.println(p1.nome);
-			System.out.println(p2.nome);
+			// tem que ficar bem claro que vc está alterando um membro da classe q é static
+			Produto.desconto = 0.50;
+			
+			System.out.println(p1.nome + " " + p1.precoComDesconto());
+			System.out.println(p2.nome + " " + p2.precoComDesconto());
 			
 			// refatoramos para chamar o método criado na classe Produto
 			double precoFinal1 = p1.precoComDesconto(0.2);

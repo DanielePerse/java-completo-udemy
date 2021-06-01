@@ -1,7 +1,7 @@
 package classe;
 
 public class Produto {
-	
+	// desafio: aplicar desconto geral para todos os produtos. O padrão é 25%, mas quando é data comemorativa varia
 	String nome;
 	double preco;
 	static double desconto = 0.25;
